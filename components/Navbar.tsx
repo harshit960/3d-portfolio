@@ -17,10 +17,10 @@ const navlinks = [
         name: "Project",
         href: "/project",
     },
-    {
-        name: "Blog",
-        href: "/blog",
-    },
+    // {
+    //     name: "Blog",
+    //     href: "/blog",
+    // },
 ];
 
 export default function Navbar(): JSX.Element {
@@ -66,7 +66,7 @@ export default function Navbar(): JSX.Element {
 
     return (
         <>
-            <nav ref={navbarRef} className={`sticky top-0 z-50 w-screen bg-white md:relative safe-layout`}>
+            <nav ref={navbarRef} className={`sticky top-0 z-50 w-screen md:relative safe-layout`}>
                 {/* <Banner /> */}
                 <div className='flex flex-row items-center justify-between py-6 border-b-2 border-b-gray safe-x-padding'>
                     <Link className='z-50' href="/" onClick={closeMenu} prefetch={false}>
@@ -80,7 +80,7 @@ export default function Navbar(): JSX.Element {
                             {navlinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
-                                        className={`${pathname === link.href ? 'text-accent' : 'text-accent2'
+                                        className={`${pathname === link.href ? 'text-white' : 'text-accent2'
                                             } p-4`}
                                         href={link.href}
                                     >
@@ -90,7 +90,7 @@ export default function Navbar(): JSX.Element {
                             ))}
 
                         </ul>
-                        <a className='px-6 py-2 text-white gradient-btn rounded-xl' href="/" download="Deri Kurniawan Resume">Resume</a>
+                        {/* <a className='px-6 py-2 text-white gradient-btn rounded-xl' href="/" download="Deri Kurniawan Resume">Resume</a> */}
                     </div>
                     {/* mobile hamburger menu */}
                     <div className="z-50 md:hidden">
@@ -119,7 +119,7 @@ export default function Navbar(): JSX.Element {
                                     onClick={closeMenu}
                                 >
                                     <div className="flex items-center justify-between">
-                                        <span className={`${pathname === link.href ? 'gradient-text' : 'text-accent'} text-2xl font-semibold`}>{link.name}</span>
+                                        <span className={`${pathname === link.href ? 'gradient-text' : 'text-white'} text-2xl font-semibold`}>{link.name}</span>
                                         <span className={`${pathname === link.href ? 'text-secondary' : ''} text-4xl`}>
                                             <RxCaretRight />
                                         </span>
@@ -127,7 +127,7 @@ export default function Navbar(): JSX.Element {
                                 </Link>
                             </li>
                         ))}
-                        <li className="flex text-white rounded-lg gradient-bg">
+                        {/* <li className="flex text-white rounded-lg gradient-bg">
                             <a
                                 href="/"
                                 className="flex-1 py-4 safe-x-padding"
@@ -140,7 +140,7 @@ export default function Navbar(): JSX.Element {
                                     </span>
                                 </div>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

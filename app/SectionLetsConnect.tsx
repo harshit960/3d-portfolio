@@ -27,7 +27,7 @@ export default function SectionLetsConnect() {
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://linkedin.com/in/deri-kurniawan', '_blank'),
+            onClick: () => window.open('https://www.linkedin.com/in/harshit-raj-805630247/', '_blank'),
         },
         {
             initial: { y: 50, opacity: 0 },
@@ -40,7 +40,7 @@ export default function SectionLetsConnect() {
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://instagram.com/deri561', '_blank'),
+            onClick: () => window.open('https://www.instagram.com/harshit.tle/', '_blank'),
         },
         {
             initial: { y: -50, opacity: 0 },
@@ -53,7 +53,7 @@ export default function SectionLetsConnect() {
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://github.com/deri-kurniawan', '_blank')
+            onClick: () => window.open('https://github.com/harshit960', '_blank')
         },
         {
             initial: { y: -50, opacity: 0 },
@@ -61,12 +61,12 @@ export default function SectionLetsConnect() {
             transition: { duration: 0.5, delay: 0.8 },
             whileHover: { scale: 1.1, transition: { duration: 0.2 } },
             className: "hidden lg:block absolute hover:cursor-pointer bottom-14 left-36 xl:left-44 md:left-24 w-10 h-10 md:w-[168px] md:h-[168px] z-10",
-            src: assets.home.letsConnect.dribble,
+            src: assets.home.letsConnect.x,
             alt: "",
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://dribbble.com/deri-kurniawan', '_blank')
+            onClick: () => window.open('https://twitter.com/', '_blank')
         },
         {
             initial: { y: 100, opacity: 0 },
@@ -79,7 +79,7 @@ export default function SectionLetsConnect() {
             width: 310,
             height: 310,
             tabIndex: 0,
-            onClick: () => window.open('mailto:deri.netuchi@gmail.com', "_self")
+            onClick: () => window.open('mailto:raj.harshit960@gmail.com', "_self")
         }
 
     ]
@@ -88,7 +88,7 @@ export default function SectionLetsConnect() {
         <section ref={ref} className={`safe-x-padding ${styles.sectionDistance} overflow-y-hidden lg:h-[1000px]`} aria-label="Let's Connect Section">
             <div className='text-center'>
                 <motion.h2 initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className={styles.sectionTitle}>Let&apos;s Connect</motion.h2>
-                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className={`${styles.sectionDescription} max-w-[730px] mx-auto`}>Do you have any questions or a project in mind? Let&apos;s connect! I am here to help and excited to hear from you. You can also take a look at my work.</motion.p>
+                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className="text-white text-2xl">Do you have any questions or a project in mind? Let&apos;s connect! I am here to help and excited to hear from you. You can also take a look at my work.</motion.p>
             </div>
             <div className='h-full mt-4'>
                 <div className='relative flex flex-col items-center justify-center'>
@@ -100,7 +100,7 @@ export default function SectionLetsConnect() {
                         animate={inView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className='w-52 h-52 md:w-[330px] md:h-[330px] lg:w-[530px] lg:h-[530px] rounded-full bg-gray lg:bg-transparent'
-                        src={assets.home.letsConnect.avatarBigSmile}
+                        src={assets.home.hero.av2}
                         alt=''
                         width={530}
                         height={530}
@@ -111,7 +111,7 @@ export default function SectionLetsConnect() {
                     ))}
                     <div className='flex flex-row flex-wrap items-center justify-center gap-3 mt-4 lg:hidden'>
                         <AnimatedImage initial={{ y: 50, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.4 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.linkedin} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('https://linkedin.com/in/deri-kurniawan', '_blank')} />
-                        <AnimatedImage initial={{ y: -50, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.8 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.dribble} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('https://dribbble.com/deri-kurniawan', '_blank')} />
+                        <AnimatedImage initial={{ y: -50, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.8 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.x} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('https://dribbble.com/deri-kurniawan', '_blank')} />
                         <AnimatedImage initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.gmail} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('mailto:deri.netuchi@gmail.com', "_self")} />
                         <AnimatedImage initial={{ y: 50, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.6 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.instagram} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('https://instagram.com/deri561', '_blank')} />
                         <AnimatedImage initial={{ y: -50, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 1 }} className="z-[1] hover:cursor-pointer w-[100px] h-[100px]" src={assets.home.letsConnect.github} alt='' width={100} height={100} tabIndex={0} onClick={() => window.open('https://github.com/deri-kurniawan', '_blank')} />

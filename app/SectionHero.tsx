@@ -70,10 +70,10 @@ export default function SectionHero(): JSX.Element {
                 {/* first */}
                 <div className='flex flex-col items-center justify-center order-2 xl:items-start xl:order-1'>
                     <motion.p
-                        className='font-montserrat font-bold text-2xl md:text-[28px] lg:text-[32px] text-accent mb-3 text-center xl:text-left'
+                        className='font-montserrat font-bold text-2xl md:text-[28px] lg:text-[32px] text-white mb-3 text-center xl:text-left'
                         aria-label="Welcome to Deri's Portfolio"
                     >
-                        Welcome to Deri&apos;s Portfolio
+                        Welcome to Harshit&apos;s Portfolio
                     </motion.p>
                     <motion.h2
                         className='font-montserrat font-extrabold text-5xl md:text-[64px] md:leading-[56px] lg:text-[66px] lg:leading-[88px] gradient-text mb-6 text-center xl:text-left'
@@ -82,10 +82,10 @@ export default function SectionHero(): JSX.Element {
                         Full Stack Web Developer
                     </motion.h2>
                     <motion.p
-                        className='text-base font-medium text-center md:text-xl lg:text-2xl text-accent xl:text-left'
+                        className='text-base font-medium text-center md:text-xl lg:text-2xl text-white xl:text-left'
                         aria-label="I'm Deri Kurniawan. A passionate Full Stack Web Developer based in Sukabumi Regency, West Java, Indonesia."
                     >
-                        I&apos;m Deri Kurniawan. A passionate Full Stack Web Developer based in Sukabumi Regency, West Java, Indonesia.
+                        I&apos;m Harshit Raj. A developer studying at NIT Jamshedpur.
                     </motion.p>
                 </div>
                 {/* second */}
@@ -97,14 +97,14 @@ export default function SectionHero(): JSX.Element {
                             >
                                 <AnimatedImage
                                     className='w-[280px] h-[280px] md:w-[330px] md:h-[330px] lg:w-[480px] lg:h-[480px] absolute top-0 bottom-0 left-0 right-0'
-                                    src={assets.home.hero.avatarSmile}
+                                    src={assets.home.hero.av1}
                                     width={480}
                                     height={480}
                                     alt=''
                                     priority
                                     initial={{ opacity: 0.5, y: 500 }}
                                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                                    transition={{ delay: 0.2, duration: 1 }}
+                                    transition={{ delay: 0.2, duration: 0.2 }}
                                     aria-label="Deri's Avatar"
                                 />
                             </motion.div>

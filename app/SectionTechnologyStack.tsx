@@ -9,61 +9,57 @@ import Link from 'next/link';
 import styles from "./home.module.css";
 
 const technologyStack = [
-    {
-        name: 'Next JS',
-        image: assets.home.technologyStack.nextJs,
-        officialSite: 'https://nextjs.org/',
-    },
-    {
-        name: 'Laravel',
-        image: assets.home.technologyStack.laravel,
-        officialSite: 'https://laravel.com/',
-    },
-    {
-        name: 'Expo',
-        image: assets.home.technologyStack.expo,
-        officialSite: 'https://expo.dev/',
-    },
-    {
-        name: 'Prisma',
-        image: assets.home.technologyStack.prisma,
-        officialSite: 'https://www.prisma.io/',
-    },
-    {
-        name: "Express JS",
-        image: assets.home.technologyStack.expressJs,
-        officialSite: 'https://expressjs.com/',
-    },
-    {
-        name: "Planet Scale",
-        image: assets.home.technologyStack.planetScale,
-        officialSite: 'https://planetscale.com/',
-    },
+    
     {
         name: "Javascript",
         image: assets.home.technologyStack.javascript,
-        officialSite: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        officialSite: '#',
+    },
+    {
+        name: "Python",
+        image: assets.home.technologyStack.python,
+        officialSite: '#',
     },
     {
         name: "React JS",
         image: assets.home.technologyStack.reactJs,
-        officialSite: 'https://reactjs.org/',
+        officialSite: '#',
     },
     {
         name: "Tailwind CSS",
         image: assets.home.technologyStack.tailwindCss,
-        officialSite: 'https://tailwindcss.com/',
+        officialSite: '#',
     },
     {
-        name: "React Native",
-        image: assets.home.technologyStack.reactNative,
-        officialSite: 'https://reactnative.dev/',
+        name: "Electron JS",
+        image: assets.home.technologyStack.electron,
+        officialSite: '#',
     },
     {
-        name: "Typescript",
-        image: assets.home.technologyStack.typescript,
-        officialSite: 'https://www.typescriptlang.org/',
-    }
+        name: "Flask",
+        image: assets.home.technologyStack.flask,
+        officialSite: '#',
+    },
+    {
+        name: "Node JS",
+        image: assets.home.technologyStack.node,
+        officialSite: '#',
+    },
+    {
+        name: "Selenium",
+        image: assets.home.technologyStack.selenium,
+        officialSite: '#',
+    },
+    {
+        name: "Three JS",
+        image: assets.home.technologyStack.threejs,
+        officialSite: '#',
+    },
+    {
+        name: "GSAP",
+        image: assets.home.technologyStack.gsap,
+        officialSite: '#',
+    },
 ]
 
 export default function SectionTechnologyStack() {
@@ -76,7 +72,9 @@ export default function SectionTechnologyStack() {
         <section ref={ref} className={`safe-x-padding ${styles.sectionDistance}`}>
             <div className='text-center'>
                 <motion.h2 initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className={styles.sectionTitle}>Technology Stack</motion.h2>
-                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className={`${styles.sectionDescription} max-w-[960px] mx-auto`}>I are concerned about security and performance for my client. That&apos;s why I always keep updating and use best technologies in a product</motion.p>
+                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className="text-white text-2xl">
+                As I pursue my degree, I immerse myself in a world of coding, constantly exploring new technologies and frameworks. 
+                </motion.p>
             </div>
             <div className='flex items-center justify-center mt-12'>
                 <div className='flex flex-row gap-[50px] max-w-[864px] flex-wrap justify-center items-center'>
@@ -98,14 +96,7 @@ export default function SectionTechnologyStack() {
                                     alt={item.name}
                                 />
                                 <Link
-                                    href={{
-                                        pathname: item.officialSite,
-                                        query: {
-                                            utm_source: 'deri.my.id',
-                                            utm_medium: 'campaign',
-                                            utm_campaign: 'portfolio'
-                                        }
-                                    }}
+                                    href="#"
                                     target="_blank"
                                     title={`Figure out about ${item.name}`}
                                 >

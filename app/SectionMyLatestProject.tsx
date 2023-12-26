@@ -10,68 +10,54 @@ import { useRouter } from 'next/navigation';
 import { BsGithub } from 'react-icons/bs';
 import { IoMdOpen } from 'react-icons/io';
 import { BsInfoCircle } from 'react-icons/bs';
-import { FiFigma } from 'react-icons/fi';
+import { FiFigma, FiGithub } from 'react-icons/fi';
 import styles from "./home.module.css";
 
 const tabs = [
     {
-        name: 'Project',
-        image: assets.home.myLatestProject.suitcase,
+        name: 'Dev',
+        image: assets.home.myLatestProject.vs,
         data: [
             {
-                slug: 'transform-portfolio-design-to-web-app-1',
-                title: 'Transform Portfolio Design to Web App',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
+                slug: 'Culfest 23 Website',
+                title: 'Culfest 23 Website',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960",
+                demoUrl: "#",
             },
             {
-                slug: 'transform-portfolio-design-to-web-app-2',
-                title: 'Portfolio 2',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
+                slug: 'SCRAP',
+                title: 'Selenium Freelance Project',
+                image: assets.home.myLatestProject.projects.sel,
+                repositoryUrl: "https://github.com/harshit960",
+                demoUrl: "#",
             },
             {
-                slug: 'transform-portfolio-design-to-web-app-3',
-                title: 'Portfolio 3',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
+                slug: 'Hamburger',
+                title: 'Hamburger',
+                image: assets.home.myLatestProject.projects.ham,
+                repositoryUrl: "https://github.com/harshit960",
+                demoUrl: "https://hamburger-kohl.vercel.app/",
             },
             {
-                slug: 'transform-portfolio-design-to-web-app-4',
-                title: 'Portfolio 4',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
-            },
-            {
-                slug: 'transform-portfolio-design-to-web-app-5',
-                title: 'Portfolio 5',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
-            },
-            {
-                slug: 'transform-portfolio-design-to-web-app-6',
-                title: 'Portfolio 6',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-                demoUrl: "https://portfolio.deri.my.id",
+                slug: 'GrabN',
+                title: 'GrabN',
+                image: assets.home.myLatestProject.projects.grabn,
+                repositoryUrl: "https://github.com/harshit960",
+                demoUrl: "#",
             },
         ]
     },
     {
-        name: 'Design',
-        image: assets.home.myLatestProject.figma,
+        name: 'Editing',
+        image: assets.home.myLatestProject.pp,
         data: [
             {
-                slug: 'portfolio-web-design',
-                title: 'Portfolio Web Design',
-                image: assets.home.myLatestProject.projects.portfolioWebsite,
-                repositoryUrl: "https://www.figma.com/file/TYBBBbA5cvBN4QU70hNxvr/DK-PORTFOLIO?type=design&node-id=49%3A26&t=3Bwr9eEa8OLH9C0R-1",
-                demoUrl: "https://www.figma.com/proto/TYBBBbA5cvBN4QU70hNxvr/DK-PORTFOLIO?page-id=0%3A1&type=design&node-id=49-26&viewport=-226%2C241%2C0.42&scaling=min-zoom",
+                slug: '',
+                title: 'Culfest Aftermovie',
+                image: assets.home.myLatestProject.projects.culfestaf,
+                repositoryUrl: "#",
+                demoUrl: "#",
             },
         ],
     },
@@ -105,7 +91,7 @@ export default function SectionMyLatestProject() {
         <section ref={ref} className={`safe-x-padding ${styles.sectionDistance}`} aria-label='My Latest Project Section'>
             <div className='text-center'>
                 <motion.h2 initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className={styles.sectionTitle}>My Latest Project</motion.h2>
-                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className={`${styles.sectionDescription} max-w-[706px] mx-auto`}>Take a look at something I&apos;ve worked on, such as a case study, real project, and more</motion.p>
+                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className="text-white text-2xl">Take a look at something I&apos;ve worked on, such as a case study, real project, and more</motion.p>
             </div>
             <div className='mt-[50px] h-full'>
                 <div className='flex flex-col items-center justify-center md:items-start md:flex-row gap-9'>
@@ -136,7 +122,7 @@ export default function SectionMyLatestProject() {
                                     style={{ height: 'auto' }}
                                 />
                                 <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition-opacity duration-300 opacity-0 bg-gray/10 backdrop-blur-sm rounded-2xl md:rounded-[25px] hover:opacity-100 md:text-2xl">
-                                    <p className={`${activeTab === index ? 'text-white' : 'text-accent'} font-bold transition-colors duration-75 ease-in-out`}>{tab.name}</p>
+                                    <p className={`${activeTab === index ? 'text-white' : 'text-white'} font-bold transition-colors duration-75 ease-in-out`}>{tab.name}</p>
                                 </div>
                             </motion.button>
 
@@ -195,7 +181,7 @@ export default function SectionMyLatestProject() {
                                                                     {tabs[activeTab].name.toLowerCase() === "project" ? (
                                                                         <BsGithub />
                                                                     ) : (
-                                                                        <FiFigma />
+                                                                        <FiGithub />
                                                                     )}
                                                                 </Link>
                                                             )}
@@ -216,9 +202,9 @@ export default function SectionMyLatestProject() {
                                                                     <IoMdOpen />
                                                                 </Link>
                                                             )}
-                                                            <Link className="p-4 transition-all duration-300 ease-in-out bg-gray rounded-2xl hover:text-white hover:bg-gradient-to-r hover:from-primary hover:to-secondary" href={`/project/${item.slug}`} title={`Detail of ${item.title}`}>
+                                                            {/* <Link className="p-4 transition-all duration-300 ease-in-out bg-gray rounded-2xl hover:text-white hover:bg-gradient-to-r hover:from-primary hover:to-secondary" href={`/project/${item.slug}`} title={`Detail of ${item.title}`}>
                                                                 <BsInfoCircle />
-                                                            </Link>
+                                                            </Link> */}
                                                         </div>
                                                     </div>
                                                 </div>

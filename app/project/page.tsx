@@ -33,10 +33,10 @@ const projectTypes = [
 
 const initialProjects = [
     {
-        slug: 'transform-portfolio-design-to-web-app-1',
-        title: 'Transform Portfolio Design to Web App',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
+        slug: 'Culfest',
+        title: 'Culfest 2k23',
+        image: assets.home.myLatestProject.projects.culfest,
+        repositoryUrl: "https://github.com/harshit960",
         demoUrl: "https://deri.my.id",
         summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         techStacks: [
@@ -58,168 +58,6 @@ const initialProjects = [
         ],
         projectType: projectTypes[0],
         category: categories[0]
-    },
-    {
-        slug: 'transform-portfolio-design-to-web-app-2',
-        title: 'Portfolio 2',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-        demoUrl: "https://deri.my.id",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[0],
-        category: categories[0]
-    },
-    {
-        slug: 'transform-portfolio-design-to-web-app-3',
-        title: 'Portfolio 3',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-        demoUrl: "https://deri.my.id",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[0],
-        category: categories[0]
-    },
-    {
-        slug: 'transform-portfolio-design-to-web-app-4',
-        title: 'Portfolio 4',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-        demoUrl: "https://deri.my.id",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[0],
-        category: categories[0]
-    },
-    {
-        slug: 'transform-portfolio-design-to-web-app-5',
-        title: 'Portfolio 5',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-        demoUrl: "https://deri.my.id",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[0],
-        category: categories[0]
-    },
-    {
-        slug: 'transform-portfolio-design-to-web-app-6',
-        title: 'Portfolio 6',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-        demoUrl: "https://deri.my.id",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[0],
-        category: categories[0]
-    },
-    {
-        slug: 'portfolio-web-design',
-        title: 'Portfolio Web Design',
-        image: assets.home.myLatestProject.projects.portfolioWebsite,
-        repositoryUrl: "https://dribbble.com/shots/21642242-3D-Theme-Portfolio-Website?utm_source=Clipboard_Shot&utm_campaign=deri-kurniawan&utm_content=3D%20Theme%20Portfolio%20Website&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=deri-kurniawan&utm_content=3D%20Theme%20Portfolio%20Website&utm_medium=Social_Share",
-        demoUrl: "https://www.figma.com/proto/TYBBBbA5cvBN4QU70hNxvr/DK-PORTFOLIO?node-id=1-2&scaling=scale-down-width",
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        techStacks: [
-            {
-                name: 'Next JS',
-                imageUrl: 'https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png',
-                webUrl: 'https://nextjs.org/'
-            },
-            {
-                name: 'React JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=123603&format=png',
-                webUrl: 'https://reactjs.org/'
-            },
-            {
-                name: 'Node JS',
-                imageUrl: 'https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png',
-                webUrl: 'https://nodejs.org/en/'
-            },
-        ],
-        projectType: projectTypes[1],
-        category: categories[1]
     },
 ]
 
@@ -235,8 +73,8 @@ export default function Project() {
     return (
         <section ref={ref} className='safe-x-padding mt-[38px] overflow-y-hidden lg:min-h-[1000px]'>
             <div className='text-center'>
-                <motion.h2 initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ duration: 0.2 }} className='mb-6 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text'>Explore Deri&apos;s Project</motion.h2>
-                <motion.p initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ duration: 0.4 }} className='font-medium text-xl lg:text-2xl text-accent max-w-[730px] mx-auto'>Take a look at something I&apos;ve worked on, such as a case study, real project, and more.</motion.p>
+                <motion.h2 initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ duration: 0.2 }} className='mb-6 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text'>Explore My Project</motion.h2>
+                <motion.p initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ duration: 0.4 }} className='font-medium text-xl lg:text-2xl text-accent max-w-[730px] mx-auto'>Take a look at something I&apos;ve worked on, websites, CLI Apps, Videos and more.</motion.p>
             </div>
             <div className='my-[50px] h-full'>
                 <motion.div initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ duration: 0.4 }} className="grid grid-flow-row grid-cols-4 gap-6 md:grid-cols-8 xl:grid-cols-12">
