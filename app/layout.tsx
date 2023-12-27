@@ -2,10 +2,14 @@ import { montserrat, poppins } from '@/constant/font'
 import './globals.css'
 import Navbar from '../components/Navbar'
 
+
 export const metadata = {
   title: "Home - Portfolio",
   description: 'Deri Kurniawan Portfolio',
 }
+
+
+
 
 export default function RootLayout({
   children,
@@ -14,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${poppins.variable} lg:overflow-x-hidden`}>
-      <body className='bg-zinc-950	'>
+      <body	>
         <Navbar />
         {children}
       </body>
