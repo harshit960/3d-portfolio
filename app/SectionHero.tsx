@@ -4,6 +4,7 @@ import { assets } from '@/constant/assets'
 import Image from 'next/image'
 import { MotionProps, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react';
 
 interface IAnimateImageProps extends MotionProps {
     className: string;
@@ -20,6 +21,28 @@ export default function SectionHero(): JSX.Element {
         threshold: 0.1,
         triggerOnce: true,
     });
+
+    const [onAv, setonAv] = useState(false)
+
+    const setonAVTrue = () => {
+        setonAv(true)
+    }
+    const setonAVFalse = () => {
+        setonAv(false)
+        console.log(onAv)
+    }
+
+    useEffect(() => {
+        if (onAv) {
+            const getAVPointer = () => {
+                window.addEventListener("mousemove", (e) => {
+                    console.log(e.clientX)
+                })
+            }
+            // getAVPointer()
+
+        }
+    })
 
     const animatedImages: IAnimateImageProps[] = [
         {
@@ -89,7 +112,7 @@ export default function SectionHero(): JSX.Element {
                     </motion.p>
                 </div>
                 {/* second */}
-                <div className='xl:order-2'>
+                <div className='xl:order-2 avator' onMouseEnter={setonAVTrue} onMouseLeave={setonAVFalse}>
                     <div className='relative flex items-center justify-center order-1 xl:justify-end'>
                         <div className='relative'>
                             <motion.div
@@ -105,7 +128,7 @@ export default function SectionHero(): JSX.Element {
                                     initial={{ opacity: 0.5, y: 500 }}
                                     animate={inView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ delay: 0.2, duration: 0.2 }}
-                                    aria-label="Deri's Avatar"
+                                    aria-label="Harshit's Avatar"
                                 />
                             </motion.div>
                             {animatedImages.map(({ className, src, width, height, alt, initial, animate, transition }, index) => (
