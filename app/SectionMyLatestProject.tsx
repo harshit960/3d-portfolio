@@ -95,7 +95,7 @@ export default function SectionMyLatestProject() {
             </div>
             <div className='mt-[50px] h-full'>
                 <div className='flex flex-col items-center justify-center md:items-start md:flex-row gap-9'>
-                    <div className='flex flex-row md:flex-col bg-gray p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[26px]'>
+                    <div className='flex flex-row md:flex-col backdrop-blur-md backdrop-brightness-110	 p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[26px]'>
                         {tabs.map((tab, index) => (
                             <motion.button
                                 key={index.toString()}
@@ -145,13 +145,13 @@ export default function SectionMyLatestProject() {
                                             >
                                                 <div className="col-span-6">
                                                     <motion.div
-                                                        className="bg-white p-[26px] rounded-2xl md:rounded-[25px] h-[261px] overflow-hidden"
+                                                        className="bg-white rounded-2xl md:rounded-[25px] h-[261px] overflow-hidden p-0"
                                                         initial={{ opacity: 0, x: -50 }}
                                                         animate={inView ? { opacity: 1, x: 0 } : {}}
                                                         transition={{ duration: 0.5, delay: 0.2 + dataIndex * 0.1 }}
                                                     >
                                                         <Image
-                                                            className="object-contain w-full h-auto"
+                                                            className="object-cover"
                                                             src={item.image}
                                                             alt=""
                                                             width={441}
