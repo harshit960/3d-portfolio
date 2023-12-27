@@ -73,11 +73,11 @@ export default function SectionLetsConnect() {
             animate: inView ? { y: 0, opacity: 1 } : {},
             transition: { duration: 0.5, delay: 0 },
             whileHover: { scale: 1.1, transition: { duration: 0.2 } },
-            className: "hidden lg:block absolute hover:cursor-pointer -bottom-64 w-10 h-10 md:w-[310px] md:h-[310px] z-10",
+            className: "hidden lg:block absolute hover:cursor-pointer -bottom-64 w-10 h-10 md:w-[168px] md:h-[168px] z-10",
             src: assets.home.letsConnect.gmail,
             alt: "",
-            width: 310,
-            height: 310,
+            width: 168,
+            height: 168,
             tabIndex: 0,
             onClick: () => window.open('mailto:raj.harshit960@gmail.com', "_self")
         }
