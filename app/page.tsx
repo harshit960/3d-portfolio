@@ -105,7 +105,7 @@ export default function Home() {
     /**
      * Renderer
      */
-    const renderer = new THREE.WebGLRenderer({canvas})
+    const renderer = new THREE.WebGLRenderer({canvas, alpha:true})
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
@@ -141,7 +141,7 @@ export default function Home() {
 
   return (
     <div className="safe-layout">
-      <canvas className="webgl fixed -z-10 p-0 m-0 top-0 left-0"></canvas>
+      <canvas className="webgl fixed z-5 p-0 m-0 top-0 left-0"></canvas>
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
