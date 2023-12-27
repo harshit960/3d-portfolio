@@ -95,11 +95,11 @@ export default function SectionMyLatestProject() {
             </div>
             <div className='mt-[50px] h-full'>
                 <div className='flex flex-col items-center justify-center md:items-start md:flex-row gap-9'>
-                    <div className='flex flex-row md:flex-col backdrop-blur-md backdrop-brightness-110	 p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[26px]'>
+                    <div className='flex flex-row md:flex-col backdrop-blur-sm bg-white bg-opacity-5 backdrop-brightness-110	 p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[26px]'>
                         {tabs.map((tab, index) => (
                             <motion.button
                                 key={index.toString()}
-                                className={`relative ${activeTab === index ? 'gradient-bg' : 'bg-white'} w-[75px] h-[75px] md:w-[150px] md:h-[150px] rounded-2xl md:rounded-[25px] flex justify-center items-center shadow-xl overflow-hidden`}
+                                className={`relative ${activeTab === index ? 'gradient-bg' : 'bg-white'} w-[75px] h-[75px] md:w-[150px] md:h-[150px] rounded-2xl md:rounded-[25px] flex justify-center items-center shadow-xl overflow-hidden backdrop-brightness-200 backdrop-blur-sm bg-white bg-opacity-5`}
                                 initial={{ opacity: 0, y: 50 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
@@ -120,6 +120,7 @@ export default function SectionMyLatestProject() {
                                     width={100}
                                     height={100}
                                     style={{ height: 'auto' }}
+                                    className='rounded-xl'
                                 />
                                 <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition-opacity duration-300 opacity-0 bg-gray/10 backdrop-blur-sm rounded-2xl md:rounded-[25px] hover:opacity-100 md:text-2xl">
                                     <p className={`${activeTab === index ? 'text-white' : 'text-white'} font-bold transition-colors duration-75 ease-in-out`}>{tab.name}</p>
@@ -129,7 +130,7 @@ export default function SectionMyLatestProject() {
                         ))}
                     </div>
                     <div className='overflow-hidden'>
-                        <div className='bg-gray rounded-[36px] p-[26px] w-full h-[600px] overflow-y-auto'>
+                        <div className='bg-gray bg-opacity-5 backdrop-brightness-200 rounded-[36px] p-[26px] w-full h-[600px] overflow-y-auto backdrop-blur-sm'>
                             <div className='grid grid-flow-row grid-cols-12 gap-[26px]'>
                                 {tabs.map((tab, tabIndex) =>
                                     tab.data.map((item, dataIndex) =>
@@ -145,7 +146,7 @@ export default function SectionMyLatestProject() {
                                             >
                                                 <div className="col-span-6">
                                                     <motion.div
-                                                        className="bg-white rounded-2xl md:rounded-[25px] h-[261px] overflow-hidden p-0"
+                                                        className="bg-white rounded-2xl md:rounded-[25px] lg:h-[250px] h-[180px] overflow-hidden p-0"
                                                         initial={{ opacity: 0, x: -50 }}
                                                         animate={inView ? { opacity: 1, x: 0 } : {}}
                                                         transition={{ duration: 0.5, delay: 0.2 + dataIndex * 0.1 }}

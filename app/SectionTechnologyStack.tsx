@@ -89,7 +89,7 @@ export default function SectionTechnologyStack() {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <Image
-                                    className='w-auto h-[100px]'
+                                    className='w-auto h-[100px] rounded-lg'
                                     src={item.image}
                                     width={0}
                                     height={100}

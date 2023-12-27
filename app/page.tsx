@@ -38,7 +38,7 @@ export default function Home() {
     // Materials
 
     const material = new THREE.PointsMaterial({
-      size:0.005
+      size:0.015
     })
 
 
@@ -92,7 +92,7 @@ export default function Home() {
      * Camera
      */
     // Base camera
-    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+    const camera = new THREE.PerspectiveCamera(40, sizes.width / sizes.height, 0.1, 100)
     camera.position.x = 0
     camera.position.y = 0
     camera.position.z = 2
@@ -120,7 +120,7 @@ export default function Home() {
       const elapsedTime = clock.getElapsedTime()
 
       // Update objects
-      partiMesh.rotation.y = .005 * elapsedTime
+      partiMesh.rotation.y = .009 * elapsedTime
 
       // Update Orbital Controls
       // controls.update()

@@ -62,14 +62,14 @@ export default function SectionQuote() {
     return (
         <section ref={ref} className={`safe-x-padding ${styles.sectionDistance}`} aria-label='Quote Section'>
             <div className='relative'>
-                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className='text-xl text-white '>Outside of the digital realm, you ll find me in the campus corridors, discussing tech trends orcapturing moments through my lens to unwind. If you have exciting projects or just want to chat tech, feel free to drop me a message—I m always up for it!
+                <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className='text-xl text-white text-center'>Outside of the digital realm, you will find me in the campus corridors, discussing tech trends or capturing moments through my lens. If you have exciting projects or just want to chat, feel free to drop me a message — I am always up for it!
                 </motion.p>
 
                 {animatedFloatingImages.map((item, index) => (
                     <AnimatedImage key={index.toString()} {...item} />
                 ))}
             </div>
-            <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.5 }} className="text-white text-4xl" style={suarte.style}>
+            <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5, delay: 0.5 }} className="text-white text-4xl text-center" style={suarte.style}>
                 Harshit Raj
             </motion.p>
         </section >

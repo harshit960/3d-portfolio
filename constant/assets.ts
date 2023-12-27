@@ -12,6 +12,7 @@ export const assets = {
       triangle: require("@images/home/hero/triangle.webp"),
       twistedTorus: require("@images/home/hero/twisted-torus.webp"),
       zigZag: require("@images/home/hero/zig-zag.webp"),
+      logo: require("@images/home/hero/14.png"),
     },
     letsConnect: {
       avatarBigSmile: require("@images/home/letsConnect/avatar-big-smile.webp"),

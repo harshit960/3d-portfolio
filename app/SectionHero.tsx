@@ -93,7 +93,7 @@ export default function SectionHero(): JSX.Element {
                     <div className='relative flex items-center justify-center order-1 xl:justify-end'>
                         <div className='relative'>
                             <motion.div
-                                className='relative w-[280px] h-[280px] md:w-[330px] md:h-[330px] lg:w-[480px] lg:h-[480px] bg-gray rounded-3xl overflow-clip'
+                                className='relative w-[280px] h-[280px] md:w-[330px] md:h-[330px] lg:w-[480px] lg:h-[480px] bg-gray bg-opacity-5 backdrop-blur-sm backdrop-brightness-200 rounded-3xl overflow-clip'
                             >
                                 <AnimatedImage
                                     className='w-[280px] h-[280px] md:w-[330px] md:h-[330px] lg:w-[480px] lg:h-[480px] absolute top-0 bottom-0 left-0 right-0'

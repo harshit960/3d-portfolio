@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image'
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -7,6 +8,8 @@ import { usePathname } from 'next/navigation';
 import Banner from './Banner';
 import { RxCaretRight } from 'react-icons/rx';
 import { BsFileEarmarkPerson } from 'react-icons/bs';
+import assert from 'assert';
+import { assets } from '@/constant/assets';
 
 const navlinks = [
     {
@@ -71,7 +74,14 @@ export default function Navbar(): JSX.Element {
                 <div className='flex flex-row items-center justify-between py-6  safe-x-padding'>
                     <Link className='z-50' href="/" onClick={closeMenu} prefetch={false}>
                         <div className="w-[32px] h-[40px] lg:w-[42px] lg:h-[50px]">
-                            <BrandIcon />
+                            {/* <BrandIcon /> */}
+                            <Image
+                                    className=''
+                                    src={assets.home.hero.logo}
+                                    alt=''
+                                    width={42}
+                                    height={50}
+                                />
                         </div>
                     </Link>
                     {/* desktop menu */}
@@ -80,7 +90,7 @@ export default function Navbar(): JSX.Element {
                             {navlinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
-                                        className={`${pathname === link.href ? 'text-white' : 'text-accent2'
+                                        className={`${pathname === link.href ? 'text-slate-500' : 'text-accent2'
                                             } p-4`}
                                         href={link.href}
                                     >
@@ -106,7 +116,7 @@ export default function Navbar(): JSX.Element {
             </nav>
             {/* mobile menu */}
             <div
-                className={`${isMenuOpen ? "top-0" : "-translate-y-full"} fixed top-0 w-screen h-screen transition-all duration-500 ease-in-out z-40 bg-white`}
+                className={`${isMenuOpen ? "top-0" : "-translate-y-full"} fixed top-0 w-screen h-screen transition-all duration-500 ease-in-out z-40 bg-black bg-opacity-10 backdrop-blur-3xl`}
                 style={{ paddingTop: navbarRef.current ? `${navbarRef.current.offsetHeight}px` : '90px' }}
             >
                 <div className='flex flex-col items-start justify-between p-4 text-lg font-medium lg:hidden lg:gap-8'>
@@ -119,7 +129,7 @@ export default function Navbar(): JSX.Element {
                                     onClick={closeMenu}
                                 >
                                     <div className="flex items-center justify-between">
-                                        <span className={`${pathname === link.href ? 'gradient-text' : 'text-white'} text-2xl font-semibold`}>{link.name}</span>
+                                        <span className={`${pathname === link.href ? 'gradient-text' : 'text-slate-500'} text-2xl font-semibold`}>{link.name}</span>
                                         <span className={`${pathname === link.href ? 'text-secondary' : ''} text-4xl`}>
                                             <RxCaretRight />
                                         </span>
