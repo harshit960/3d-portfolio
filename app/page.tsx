@@ -27,7 +27,7 @@ export default function Home() {
   useEffect(() => {
 
     // Canvas
-    const canvas = document.querySelector('canvas.webgl')
+    const canvas = document.querySelector('canvas.webgl')!
 
     // Scene
     const scene = new THREE.Scene()
@@ -105,9 +105,7 @@ export default function Home() {
     /**
      * Renderer
      */
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvas
-    })
+    const renderer = new THREE.WebGLRenderer({canvas})
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
