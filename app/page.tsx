@@ -9,7 +9,7 @@ import SectionTechnologyStack from "./SectionTechnologyStack";
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { useEffect } from 'react'
-
+import gsap from 'gsap';
 
 
 
@@ -43,10 +43,10 @@ export default function Home() {
 
 
     const particleGeo = new THREE.BufferGeometry;
-    const particleCount = 1000;
+    const particleCount = 2000;
     const posArray = new Float32Array(particleCount* 3)
 
-    for(let i=0; i < particleCount *3 ; i++){
+    for(let i=0; i < particleCount *6 ; i++){
       posArray[i] = 5*(Math.random() -0.5)
 
     }
@@ -88,6 +88,8 @@ export default function Home() {
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     })
 
+
+
     /**
      * Camera
      */
@@ -111,6 +113,8 @@ export default function Home() {
 
     /**
      * Animate
+     * 
+     * 
      */
 
     const clock = new THREE.Clock()
@@ -122,6 +126,14 @@ export default function Home() {
       // Update objects
       partiMesh.rotation.y = .009 * elapsedTime
 
+      window.addEventListener("scroll", () =>{
+        gsap.to(camera.position, {z: camera.position.z - 0.05, duration: 10, ease:"bounce.in"});
+        gsap.to(camera, {fov: camera.fov + 0.1, duration: 10,ease:"bounce.in"});
+        // camera.position.z = camera.position.z - 0.00001
+        // camera.fov = camera.fov + 0.0001
+        // console.log(camera.position.z)
+      })
+  
       // Update Orbital Controls
       // controls.update()
 
