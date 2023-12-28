@@ -26,10 +26,10 @@ export default function SectionHero(): JSX.Element {
     
     useEffect(() => {
       
-    gsap.to( ".img-1", { rotate: 360 , repeat:-1, duration: 0.1, delay:3, ease:"none"})
-    gsap.to( ".img-2", { rotate: -360 , repeat:-1, duration: 0.1, delay:3, ease:"none"})
-    gsap.to( ".img-3", { rotate: -360 , repeat:-1, duration: 0.1, delay:3, ease:"none"})
-    gsap.to( ".img-4", { rotate: 360 , repeat:-1, duration: 0.1, delay:3, ease:"none"})
+    gsap.to( ".img-1", { rotate: 360 , repeat:-1, duration: 15, delay:3, ease:"none"})
+    gsap.to( ".img-2", { rotate: -360 , repeat:-1, duration: 15, delay:3, ease:"none"})
+    gsap.to( ".img-3", { rotate: -360 , repeat:-1, duration: 15, delay:3, ease:"none"})
+    gsap.to( ".img-4", { rotate: 360 , repeat:-1, duration: 15, delay:3, ease:"none"})
 
 
     })
@@ -38,44 +38,44 @@ export default function SectionHero(): JSX.Element {
 
     const animatedImages: IAnimateImageProps[] = [
         {
-            className: 'img-1 w-[140px] h-auto lg:w-[180px] lg:h-[120px] absolute top-3 -left-16 z-[1] transition-all	duration-500	',
+            className: 'img-1 w-[140px] h-auto lg:w-[180px] lg:h-[120px] absolute top-3 -left-16 z-[1] 	',
             src: assets.home.hero.zigZag,
             width: 180,
             height: 120,
             alt: '',
             initial: { opacity: 0, x: -100 },
             animate: inView ? { opacity: 1, x: 0 } : {},
-            transition: { delay: 0.4, duration: 0.8 },
+            // transition: { delay: 0.4, duration: 0.8 },
         },
         {
-            className: 'img-2 w-[110px] h-auto lg:w-[150px] lg:h-[140px] absolute top-6 -right-12 z-[1] transition-all	duration-500	',
+            className: 'img-2 w-[110px] h-auto lg:w-[150px] lg:h-[140px] absolute top-6 -right-12 z-[1]	',
             src: assets.home.hero.twistedTorus,
             width: 150,
             height: 140,
             alt: '',
             initial: { opacity: 0, x: 100 },
             animate: inView ? { opacity: 1, x: 0 } : {},
-            transition: { delay: 0.6, duration: 0.8 },
+            // transition: { delay: 0.6, duration: 0.8 },
         },
         {
-            className: 'img-3 w-[130px] h-auto lg:w-[170px] lg:h-[170px] absolute bottom-6 -left-14 z-[1] transition-all duration-500		',
+            className: 'img-3 w-[130px] h-auto lg:w-[170px] lg:h-[170px] absolute bottom-6 -left-14 z-[1]',
             src: assets.home.hero.quadrilateral,
             width: 170,
             height: 170,
             alt: '',
             initial: { opacity: 0, x: -100 },
             animate: inView ? { opacity: 1, x: 0 } : {},
-            transition: { delay: 0.8, duration: 0.8 },
+            // transition: { delay: 0.8, duration: 0.8 },
         },
         {
-            className: 'img-4 w-[192px] h-auto lg:w-[242px] lg:h-[202px] absolute bottom-8 -right-24 z-[1] transition-all	 duration-500	',
+            className: 'img-4 w-[192px] h-auto lg:w-[242px] lg:h-[202px] absolute bottom-8 -right-24 z-[1] ',
             src: assets.home.hero.triangle,
             width: 242,
             height: 202,
             alt: '',
             initial: { opacity: 0, x: 100 },
             animate: inView ? { opacity: 1, x: 0 } : {},
-            transition: { delay: 1, duration: 0.8 },
+            // transition: { delay: 1, duration: 0.8 },
         },
     ];
 
