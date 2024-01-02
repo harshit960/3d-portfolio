@@ -18,7 +18,7 @@ const navlinks = [
     },
     {
         name: "Project",
-        href: "/project",
+        href: "/#project",
     },
     // {
     //     name: "Blog",

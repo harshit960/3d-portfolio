@@ -23,8 +23,30 @@ const tabs = [
                 title: 'Culfest 23 Website',
                 image: assets.home.myLatestProject.projects.culfest,
                 repositoryUrl: "https://github.com/harshit960",
+                demoUrl: "https://culfest.in/",
+            },
+            {
+                slug: 'ECell',
+                title: 'ECell Website',
+                image: assets.home.myLatestProject.projects.ecell,
+                repositoryUrl: "https://github.com/codewithnick/ecellnitjsr",
+                demoUrl: "https://ecellnitjsr.vercel.app",
+            },
+            {
+                slug: 'GrabN',
+                title: 'GrabN',
+                image: assets.home.myLatestProject.projects.grabn,
+                repositoryUrl: "https://github.com/harshit960/GrabN",
                 demoUrl: "#",
             },
+            {
+                slug: 'Hamburger',
+                title: 'Hamburger',
+                image: assets.home.myLatestProject.projects.ham,
+                repositoryUrl: "https://github.com/harshit960/Hamburger",
+                demoUrl: "https://hamburger-kohl.vercel.app/",
+            },
+            
             {
                 slug: 'SCRAP',
                 title: 'Selenium Freelance Project',
@@ -32,20 +54,8 @@ const tabs = [
                 repositoryUrl: "https://github.com/harshit960",
                 demoUrl: "#",
             },
-            {
-                slug: 'Hamburger',
-                title: 'Hamburger',
-                image: assets.home.myLatestProject.projects.ham,
-                repositoryUrl: "https://github.com/harshit960",
-                demoUrl: "https://hamburger-kohl.vercel.app/",
-            },
-            {
-                slug: 'GrabN',
-                title: 'GrabN',
-                image: assets.home.myLatestProject.projects.grabn,
-                repositoryUrl: "https://github.com/harshit960",
-                demoUrl: "#",
-            },
+            
+            
         ]
     },
     {
@@ -56,6 +66,20 @@ const tabs = [
                 slug: '',
                 title: 'Culfest Aftermovie',
                 image: assets.home.myLatestProject.projects.culfestaf,
+                repositoryUrl: "#",
+                demoUrl: "#",
+            },
+            {
+                slug: '',
+                title: 'GDSC Trailer',
+                image: assets.home.myLatestProject.projects.gdsc,
+                repositoryUrl: "#",
+                demoUrl: "#",
+            },
+            {
+                slug: '',
+                title: 'Culfest Countdown',
+                image: assets.home.myLatestProject.projects.culfestcount,
                 repositoryUrl: "#",
                 demoUrl: "#",
             },
@@ -88,7 +112,7 @@ export default function SectionMyLatestProject() {
     }, [activeTab])
 
     return (
-        <section ref={ref} className={`safe-x-padding ${styles.sectionDistance}`} aria-label='My Latest Project Section'>
+        <section ref={ref} className={`safe-x-padding  ${styles.sectionDistance}`} aria-label='My Latest Project Section'>
             <div className='text-center'>
                 <motion.h2 initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.5 }} className={styles.sectionTitle}>My Latest Project</motion.h2>
                 <motion.p initial={{ y: 100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 0.7 }} className="text-white text-2xl">Take a look at something I&apos;ve worked on, such as a case study, real project, and more</motion.p>
@@ -129,7 +153,7 @@ export default function SectionMyLatestProject() {
 
                         ))}
                     </div>
-                    <div className='overflow-hidden'>
+                    <div className='overflow-hidden projects'>
                         <div className='bg-gray bg-opacity-5 backdrop-brightness-200 rounded-[36px] p-[26px] w-full h-[600px] overflow-y-auto backdrop-blur-sm'>
                             <div className='grid grid-flow-row grid-cols-12 gap-[26px]'>
                                 {tabs.map((tab, tabIndex) =>

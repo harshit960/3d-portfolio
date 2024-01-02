@@ -127,8 +127,8 @@ export default function Home() {
       partiMesh.rotation.y = .009 * elapsedTime
 
       window.addEventListener("scroll", () =>{
-        gsap.to(camera.position, {z: camera.position.z - 0.05, duration: 10, ease:"bounce.in"});
-        gsap.to(camera, {fov: camera.fov + 0.1, duration: 10,ease:"bounce.in"});
+        gsap.to(camera.position, {z: camera.position.z - 0.01, duration: 10, ease:"bounce.in"});
+        // gsap.to(camera, {fov: camera.fov + 0.1, duration: 10,ease:"bounce.in"});
         // camera.position.z = camera.position.z - 0.00001
         // camera.fov = camera.fov + 0.0001
         // console.log(camera.position.z)
