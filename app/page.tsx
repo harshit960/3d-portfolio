@@ -8,10 +8,11 @@ import SectionTechnologyStack from "./SectionTechnologyStack";
 // import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import gsap from 'gsap';
 
-
+// import { useEffect, useState } from 'react'
+import useLocoScroll from './useLocoScroll'
 
 
 
@@ -148,12 +149,20 @@ export default function Home() {
   })
 
 
+  const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    setStart(true);
+  }, []);
+
+  useLocoScroll(start);
 
 
 
-  return (
-    <div className="safe-layout">
+
+  return (<>
       <canvas className="webgl fixed z-5 p-0 m-0 top-0 left-0"></canvas>
+    <div className="safe-layout" id='main-container'>
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
@@ -161,5 +170,6 @@ export default function Home() {
       <SectionQuote />
       <Footer />
     </div>
+    </>
   )
 }

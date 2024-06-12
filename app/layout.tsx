@@ -1,7 +1,7 @@
+
 import { montserrat, poppins } from '@/constant/font'
 import './globals.css'
 import Navbar from '../components/Navbar'
-
 
 export const metadata = {
   title: "Home - Portfolio",
@@ -16,9 +16,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en" className={`${montserrat.variable} ${poppins.variable} lg:overflow-x-hidden`}>
-      <body	className='bg-black'>
+      <body	className='bg-black' >
         <Navbar />
         {children}
       </body>
