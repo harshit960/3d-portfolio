@@ -60,6 +60,32 @@ const technologyStack = [
         image: assets.home.technologyStack.gsap,
         officialSite: '#',
     },
+    {
+        name: "Next.js",
+        image: assets.home.technologyStack.nextJs,
+        officialSite: '#',
+    },
+    {
+        name: "TypeScript",
+        image: assets.home.technologyStack.typescript,
+        officialSite: '#',
+    },
+    {
+        name: "Docker",
+        image: assets.home.technologyStack.docker,
+        officialSite: '#',
+    },
+    {
+        name: "Google Cloud",
+        image: assets.home.technologyStack.gcp,
+        officialSite: '#',
+    },
+    {
+        name: "AWS",
+        image: assets.home.technologyStack.aws,
+        officialSite: '#',
+    },
+    
 ]
 
 export default function SectionTechnologyStack() {
@@ -79,9 +105,9 @@ export default function SectionTechnologyStack() {
             <div className='flex items-center justify-center mt-12'>
                 <div className='flex flex-row gap-[50px] max-w-[864px] flex-wrap justify-center items-center'>
                     {technologyStack.map((item, index) => (
-                        <div key={index.toString()} className='relative h-full'>
+                        <div key={index.toString()} className='relative h-full '>
                             <motion.div
-                                className="flex justify-center items-center w-[100px] h-[100px] transition-all duration-150 ease-in-out"
+                                className="flex  justify-center items-center w-[100px] h-[100px] transition-all duration-150 ease-in-out"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -89,7 +115,7 @@ export default function SectionTechnologyStack() {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <Image
-                                    className='w-auto h-[100px] rounded-lg'
+                                    className='w-auto h-[100px] rounded-2xl  bg-white'
                                     src={item.image}
                                     width={0}
                                     height={100}
