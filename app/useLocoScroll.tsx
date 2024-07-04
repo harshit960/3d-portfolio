@@ -5,7 +5,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 const useLocoScroll = (start: boolean) => {
   useEffect(() => {
-    if (!start) return;
+    if (!start || typeof document === 'undefined') return;
 
     const scrollEl = document.querySelector('#main-container') as HTMLElement;
 
