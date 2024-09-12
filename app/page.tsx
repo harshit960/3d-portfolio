@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 import gsap from 'gsap';
 
 // import { useEffect, useState } from 'react'
-import useLocoScroll from './useLocoScroll'
+// import useLocoScroll from './useLocoScroll'
 
 
 
@@ -155,7 +155,7 @@ export default function Home() {
     setStart(true);
   }, []);
 
-  useLocoScroll(start);
+  // useLocoScroll(start);
 
 
 
