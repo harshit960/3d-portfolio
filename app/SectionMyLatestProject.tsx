@@ -19,6 +19,41 @@ const tabs = [
         image: assets.home.myLatestProject.vs,
         data: [
             {
+                slug: 'RedBull',
+                title: 'RedBull Website Redesign',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960/Project-Redbull_Harshit",
+                demoUrl: "https://project-redbull.vercel.app/",
+            },
+            {
+                slug: 'Seovew',
+                title: 'Seovew Website',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960/SEO-Audit",
+                demoUrl: "https://www.seovew.com/",
+            },
+            {
+                slug: 'MetaFrazo',
+                title: 'MetaFrazo Landing Page',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960/metafrazo",
+                demoUrl: "https://metafrazo.vercel.app/",
+            },
+            {
+                slug: 'YourAds',
+                title: 'YourAds Landing Page',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960/YourAdsNext",
+                demoUrl: "https://www.yourads.in/",
+            },
+            {
+                slug: 'GDSC',
+                title: 'GDSC Landing Page',
+                image: assets.home.myLatestProject.projects.culfest,
+                repositoryUrl: "https://github.com/harshit960/GDSCnitjsr_officalweb",
+                demoUrl: "https://www.gdscnitjsr.in/",
+            },
+            {
                 slug: 'Culfest 23 Website',
                 title: 'Culfest 23 Website',
                 image: assets.home.myLatestProject.projects.culfest,
