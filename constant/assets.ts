@@ -39,6 +39,11 @@ export const assets = {
         gdsc: require("@images/home/myLatestProject/projects/gdsc.png"),
         culfestcount: require("@images/home/myLatestProject/projects/culfestcount.png"),
         culfestaf: require("@images/home/myLatestProject/af.png"),
+        gdscWeb: require("@images/home/myLatestProject/projects/gdscWeb.png"),
+        metafrazo: require("@images/home/myLatestProject/projects/metafrazo.png"),
+        redbull: require("@images/home/myLatestProject/projects/RedBull.png"),
+        seo: require("@images/home/myLatestProject/projects/seo.png"),
+        yourads: require("@images/home/myLatestProject/projects/yourads.png"),
       },
     },
     quote: {
