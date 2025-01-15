@@ -4,6 +4,7 @@ import SectionHero from "./SectionHero";
 import SectionLetsConnect from "./SectionLetsConnect";
 import SectionMyLatestProject from "./SectionMyLatestProject";
 import SectionQuote from "./SectionQuote";
+import Timeline from "./Timeline";
 import SectionTechnologyStack from "./SectionTechnologyStack";
 // import './style.css'
 import * as THREE from 'three'
@@ -166,6 +167,7 @@ export default function Home() {
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
+      <Timeline/>
       <SectionLetsConnect />
       <SectionQuote />
       <Footer />

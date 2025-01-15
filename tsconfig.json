@@ -26,6 +26,6 @@
       "@components/*": ["./components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Timeline.jsx", "app/blog/grabn/page.jsx"],
   "exclude": ["node_modules"]
 }
