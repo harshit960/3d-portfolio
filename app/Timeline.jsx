@@ -134,10 +134,17 @@ function Timeline() {
                         <VerticalTimelineElement
                             key={index}
                             className="vertical-timeline-element--work"
-                            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                            contentStyle={{
+                                background: 'rgba(33, 150, 243, 0.2)', // Semi-transparent background
+                                color: '#fff', // White text color
+                                backdropFilter: 'blur(100px)', // Blurring the background
+                                borderRadius: '10px', // Optional: rounded corners for a soft look
+                                padding: '20px', // Optional: padding for content
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional: subtle shadow for depth
+                            }}
+                            contentArrowStyle={{ borderRight: '7px solid  #fff' }}
                             date={project.date}
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                            iconStyle={{ background: '#fff', color: '#fff' }}
                         // icon={<WorkIcon />}
                         >
                             <h3 className="vertical-timeline-element-title">{project.name}</h3>
