@@ -159,15 +159,13 @@ export default function Home() {
   // useLocoScroll(start);
 
 
-
-
   return (<>
       <canvas className="webgl fixed z-5 p-0 m-0 top-0 left-0"></canvas>
     <div className="safe-layout" id='main-container'>
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
-      <Timeline/>
+      {/* <Timeline/> */}
       <SectionLetsConnect />
       <SectionQuote />
       <Footer />
