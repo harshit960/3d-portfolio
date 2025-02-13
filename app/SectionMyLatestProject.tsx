@@ -26,6 +26,13 @@ const tabs = [
                 demoUrl: "https://project-redbull.vercel.app/",
             },
             {
+                slug: 'Younglancer',
+                title: 'Younglancer Website',
+                image: assets.home.myLatestProject.projects.Younglancer,
+                repositoryUrl: "#",
+                demoUrl: "https://younglancer.netlify.app/",
+            },
+            {
                 slug: 'Seovew',
                 title: 'Seovew Website',
                 image: assets.home.myLatestProject.projects.seo,
