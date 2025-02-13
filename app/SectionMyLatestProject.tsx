@@ -19,18 +19,18 @@ const tabs = [
         image: assets.home.myLatestProject.vs,
         data: [
             {
-                slug: 'RedBull',
-                title: 'RedBull Website Redesign',
-                image: assets.home.myLatestProject.projects.redbull,
-                repositoryUrl: "https://github.com/harshit960/Project-Redbull_Harshit",
-                demoUrl: "https://project-redbull.vercel.app/",
-            },
-            {
                 slug: 'Younglancer',
                 title: 'Younglancer Website',
                 image: assets.home.myLatestProject.projects.Younglancer,
                 repositoryUrl: "#",
                 demoUrl: "https://younglancer.netlify.app/",
+            },
+            {
+                slug: 'MetaFrazo',
+                title: 'MetaFrazo Landing Page',
+                image: assets.home.myLatestProject.projects.metafrazo,
+                repositoryUrl: "https://github.com/harshit960/metafrazo",
+                demoUrl: "https://metafrazo.vercel.app/",
             },
             {
                 slug: 'Seovew',
@@ -40,11 +40,11 @@ const tabs = [
                 demoUrl: "https://www.seovew.com/",
             },
             {
-                slug: 'MetaFrazo',
-                title: 'MetaFrazo Landing Page',
-                image: assets.home.myLatestProject.projects.metafrazo,
-                repositoryUrl: "https://github.com/harshit960/metafrazo",
-                demoUrl: "https://metafrazo.vercel.app/",
+                slug: 'RedBull',
+                title: 'RedBull Website Redesign',
+                image: assets.home.myLatestProject.projects.redbull,
+                repositoryUrl: "https://github.com/harshit960/Project-Redbull_Harshit",
+                demoUrl: "https://project-redbull.vercel.app/",
             },
             {
                 slug: 'YourAds',
