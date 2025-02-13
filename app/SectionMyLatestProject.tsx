@@ -47,6 +47,13 @@ const tabs = [
                 demoUrl: "https://project-redbull.vercel.app/",
             },
             {
+                slug: 'Hiqual Solutions Clone',
+                title: 'Hiqual Solutions Next.js Website',
+                image: assets.home.myLatestProject.projects.hiqsclone,
+                repositoryUrl: "https://github.com/harshit960/hiqsclone",
+                demoUrl: "https://hiqsclone.vercel.app/",
+            },
+            {
                 slug: 'YourAds',
                 title: 'YourAds Landing Page',
                 image: assets.home.myLatestProject.projects.yourads,

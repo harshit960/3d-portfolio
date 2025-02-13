@@ -42,6 +42,7 @@ export const assets = {
         gdscWeb: require("@images/home/myLatestProject/projects/gdscWeb.png"),
         metafrazo: require("@images/home/myLatestProject/projects/metafrazo.png"),
         redbull: require("@images/home/myLatestProject/projects/RedBull.png"),
+        hiqsclone: require("@images/home/myLatestProject/projects/hiqsclone.png"),
         Younglancer: require("@images/home/myLatestProject/projects/younglancer.png"),
         seo: require("@images/home/myLatestProject/projects/seo.png"),
         yourads: require("@images/home/myLatestProject/projects/yourads.png"),
