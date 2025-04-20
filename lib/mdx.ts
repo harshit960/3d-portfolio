@@ -80,12 +80,10 @@ export async function getAllPosts(): Promise<{ slug: string; metadata: PostMetad
   );
   
   // Filter out any null entries and sort by date, newest first
+  // Explicitly type the filtered array to remove null values
   return posts
-    .filter(post => post !== null)
+    .filter((post): post is { slug: string; metadata: PostMetadata } => post !== null)
     .sort((a, b) => {
-      if (a && b) {
-        return new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime();
-      }
-      return 0;
+      return new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime();
     });
 } 
