@@ -16,35 +16,35 @@ export interface PostMetadata {
   slug: string;
 }
 
-const postsDirectory = path.join(process.cwd(), 'app/blog');
+const postsDirectory = path.join(process.cwd(), 'app/projects');
 
 // Get all blog post slugs (folder names)
 export function getAllPostSlugs() {
   const folders = fs.readdirSync(postsDirectory, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);
-  
+
   return folders;
 }
 
 // Get a specific post's content and metadata by slug
 export async function getPostBySlug(slug: string): Promise<{ content: string; metadata: PostMetadata }> {
   const fullPath = path.join(postsDirectory, slug, 'README.md');
-  
+
   // Check if the file exists
   if (!fs.existsSync(fullPath)) {
     throw new Error(`Post file not found for slug: ${slug}`);
   }
-  
+
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  
+
   // Process markdown content to HTML
   const processedContent = await remark()
     .use(rehype)
     .use(stringify)
     .process(content);
-  
+
   // Return with typed metadata
   return {
     content: processedContent.toString(),
@@ -63,22 +63,27 @@ export async function getPostBySlug(slug: string): Promise<{ content: string; me
 // Get all posts with metadata
 export async function getAllPosts(): Promise<{ slug: string; metadata: PostMetadata }[]> {
   const slugs = getAllPostSlugs();
-  
+
   const posts = await Promise.all(
     slugs.map(async (slug) => {
       try {
-        const { metadata } = await getPostBySlug(slug);
-        return {
-          slug,
-          metadata
-        };
+        if (slug != "[slug]") {
+          const { metadata } = await getPostBySlug(slug);
+          return {
+            slug,
+            metadata
+          };
+        }
+        else{
+          return null; // Skip the "[slug]" directory
+        }
       } catch (error) {
         console.error(`Error loading post ${slug}:`, error);
         return null;
       }
     })
   );
-  
+
   // Filter out any null entries and sort by date, newest first
   // Explicitly type the filtered array to remove null values
   return posts

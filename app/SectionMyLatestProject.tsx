@@ -178,7 +178,7 @@ export default function SectionMyLatestProject() {
                                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                                 onClick={() => {
                                     if (index === tabs.length - 1) {
-                                        router.push('/project');
+                                        router.push('/projects');
                                         return;
                                     }
                                     setActiveTab(index);

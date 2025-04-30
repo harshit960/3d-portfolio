@@ -15,7 +15,7 @@ export default async function Blog() {
     return (
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className='text-center mb-12'>
-                <h2 className='mb-4 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text'>Blog</h2>
+                <h2 className='mb-4 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text'>Projects and Blog</h2>
                 <p className='font-medium text-xl lg:text-2xl text-[#c9d1d9] max-w-[960px] mx-auto'>
                     Thoughts, stories, and tutorials on web development and technology
                 </p>
@@ -39,7 +39,7 @@ export default async function Blog() {
                         </h3>
                     </div>
                     
-                    <Link href={`/blog/${featuredPost.slug}`} className="group block">
+                    <Link href={`/projects/${featuredPost.slug}`} className="group block">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden shadow-xl hover:shadow-primary/20 transition-shadow duration-300">
                             <div className="lg:col-span-7 relative">
                                 <div className="h-64 lg:h-full w-full relative">

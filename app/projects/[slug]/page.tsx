@@ -4,11 +4,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllPostSlugs, getPostBySlug, getAllPosts } from '@/lib/mdx';
 import BlogSidebar from '@/components/BlogSidebar';
-
+import * as React from 'react';
 // Generate metadata for each blog post
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   try {
-    const { metadata } = await getPostBySlug(params.slug);
+    const paramss = React.use(params);
+
+    const { metadata } = await getPostBySlug(paramss.slug);
     
     return {
       title: `${metadata.title} | Blog`,
@@ -37,9 +39,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   try {
-    const { content, metadata } = await getPostBySlug(params.slug);
+    const paramss = React.use(params);  
+    const { content, metadata } = await getPostBySlug(paramss.slug);
     const allPosts = await getAllPosts();
     
     const formattedDate = new Date(metadata.date).toLocaleDateString('en-US', {
@@ -147,7 +150,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           
           {/* Sidebar */}
           <div className="lg:col-span-4">
-            <BlogSidebar posts={allPosts} currentSlug={params.slug} />
+            <BlogSidebar posts={allPosts} currentSlug={paramss.slug} />
           </div>
         </div>
       </div>

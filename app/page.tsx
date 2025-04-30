@@ -165,7 +165,7 @@ export default function Home() {
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
-      {/* <Timeline/> */}
+      <Timeline/>
       <SectionLetsConnect />
       <SectionQuote />
       <Footer />
