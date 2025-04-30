@@ -1,10 +1,10 @@
 ---
-title: Anton
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+title: Nightcrawler
+date: '2024-03'
+description: Nightcrawler is an asynchronous Python web crawler that uses Selenium and MongoDB to intelligently extract email addresses from websites within the same domain while bypassing anti-bot measures.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [Web Crawler, Email Extraction, Python, Selenium, Scraping, Automation, Data Mining]
+image: https://images.unsplash.com/photo-1674027326252-a09b3473e18f
 ---
 
 # 🕷️ Nightcrawler

@@ -19,7 +19,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 
   return (
     <div className="bg-[#161b22] rounded-lg overflow-hidden shadow-md shadow-[#0d1117]/50 hover:shadow-lg hover:shadow-primary/20 hover:translate-y-[-4px] transition-all duration-300 ease-in-out border border-[#30363d] h-full">
-      <Link href={`/blog/${slug}`} className="block h-full">
+      <Link href={`/projects/${slug}`} className="block h-full">
         <div className="relative overflow-hidden aspect-video">
           {metadata.image ? (
             <Image 

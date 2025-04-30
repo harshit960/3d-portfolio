@@ -1,10 +1,10 @@
 ---
-title: Anton
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+title: Project-Redbull
+date: '2024-05'
+description: Project-Redbull is an immersive and animated promotional website for Red Bull, built with React, Vite, Three.js, and GSAP, featuring interactive 3D models, smooth scrolling, and a responsive design to showcase the brand and its products.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [Three.js, GSAP, Framer Motion, TailwindCSS, 3D, Animation, Interactive Website, Red Bull, Frontend]
+image: https://images.unsplash.com/photo-1662948348853-ae7de7300e5e
 ---
 
 # Project-Redbull - Interactive Red Bull Website

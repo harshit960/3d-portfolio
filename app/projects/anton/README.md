@@ -1,10 +1,10 @@
 ---
 title: Anton
 date: '2025-04'
-description: Advanced Conversational AI Platform
+description: Anton is an advanced conversational AI platform with a microservice architecture, leveraging RAG, vector databases, and fine-tuned LLMs to provide context-aware conversations via Telegram with an evolving personality and Hinglish support.
 author: Harshit Raj
 tags: ['Gen Ai', 'Fine-Tuning', 'Full Stack Development', 'Microservice']
-image: https://images.unsplash.com/photo-1680783954745-3249be59e527
+image: https://images.unsplash.com/photo-1696272440000-0808a203c852
 ---
 
 
@@ -13,7 +13,7 @@ image: https://images.unsplash.com/photo-1680783954745-3249be59e527
 
 ## Overview
 
-Anton (Son of Anton) is a sophisticated conversational AI assistant. It leverages modern AI techniques to provide natural, context-aware conversations through a Telegram interface. The system combines retrieval-augmented generation (RAG), vector databases, and fine-tuned large language models to create human-like conversational experiences with a unique, evolving personality.
+Anton is a sophisticated conversational AI assistant. It leverages modern AI techniques to provide natural, context-aware conversations through a Telegram interface. The system combines retrieval-augmented generation (RAG), vector databases, and fine-tuned large language models to create human-like conversational experiences with a unique, evolving personality.
 
 ## Architecture
 

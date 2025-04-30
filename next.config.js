@@ -4,7 +4,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     images: {
-        domains: ['images.unsplash.com','plus.unsplash.com'],
+        domains: ['images.unsplash.com','plus.unsplash.com','harshit-delta.vercel.app'],
     }
 }
 

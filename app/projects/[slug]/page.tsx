@@ -8,8 +8,7 @@ import * as React from 'react';
 // Generate metadata for each blog post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   try {
-    const paramss = React.use(params);
-
+    const paramss = await params;
     const { metadata } = await getPostBySlug(paramss.slug);
     
     return {
@@ -41,7 +40,7 @@ export async function generateStaticParams() {
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   try {
-    const paramss = React.use(params);  
+    const paramss = await params;  
     const { content, metadata } = await getPostBySlug(paramss.slug);
     const allPosts = await getAllPosts();
     
@@ -55,7 +54,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back button */}
         <Link 
-          href="/blog" 
+          href="/projects" 
           className="inline-flex items-center mb-8 text-[#58a6ff] hover:text-primary transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -1,15 +1,15 @@
 ---
-title: Anton
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+title: Hamburger
+date: '2023-12'
+description: This project is an interactive 3D hamburger viewer built with Three.js and Vite, featuring mouse-controlled rotation and a custom animated cursor.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [3D, Three.js, WebGL, Interactive, Visualization, JavaScript, Frontend]
+image: https://harshit-delta.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.258de310.png&w=1080&q=75
 ---
 
-# 3D Hamburger Viewer
+# 3D Hamburger 
 
-![3D Hamburger Viewer](https://img.shields.io/badge/3D-Hamburger%20Viewer-orange)
+![3D Hamburger](https://img.shields.io/badge/3D-Hamburger%20Viewer-orange)
 ![Three.js](https://img.shields.io/badge/Three.js-r160-brightgreen)
 ![Vite](https://img.shields.io/badge/Vite-v5.0.8-blue)
 
@@ -23,10 +23,6 @@ An interactive 3D hamburger viewer built with Three.js and Vite. This project di
 - Responsive design that works across different screen sizes
 - Built with Vite for fast development and optimized production builds
 
-## Demo
-
-*Add screenshot or GIF of your hamburger model here*
-
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
@@ -36,7 +32,6 @@ An interactive 3D hamburger viewer built with Three.js and Vite. This project di
 
 1. Clone this repository:
    ```bash
-   git clone <your-repository-url>
    cd hamburger
    ```
 

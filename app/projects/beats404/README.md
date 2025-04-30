@@ -1,10 +1,10 @@
 ---
 title: BeatsNotFound
 date: '2025-04'
-description: A terminal-style music application that creates personalized Spotify playlists.
+description: beatsnotfound is a terminal-style music application that uses AI to create personalized Spotify playlists based on your mood.
 author: Harshit Raj
 tags: ['Node.js', 'GenAI', 'Socket.io']
-image: https://images.unsplash.com/photo-1470225620780-dba8ba36b745?
+image: https://images.unsplash.com/photo-1504509546545-e000b4a62425
 ---
 
 

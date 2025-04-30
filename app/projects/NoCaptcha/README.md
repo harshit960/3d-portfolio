@@ -1,10 +1,10 @@
 ---
 title: No captcha
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+date: '2024-12'
+description: This project outlines an advanced bot prevention system designed to protect web services from LLM bot attacks using layered verification, dynamic challenges, behavioral analysis, and flexible restrictions, all while prioritizing user experience.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [Web Security, Bot Prevention, LLM Bots, Security Architecture]
+image: https://images.unsplash.com/photo-1614210358042-933d978732be
 ---
 
 ---

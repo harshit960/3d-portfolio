@@ -1,10 +1,10 @@
 ---
-title: Anton
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+title: MetaFrazo Landing Page
+date: '2024-08'
+description: MetaFrazo Landing Page is a modern, responsive website built with React, Vite, and TailwindCSS, showcasing an AI dubbing and translation solution for media content with smooth animations and a focus on user experience.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [Landing Page, React, TailwindCSS, Responsive, Framer Motion]
+image: https://harshit-delta.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmetafrazo.b24e26ac.png&w=1080&q=75
 ---
 
 # MetaFrazo Landing Page

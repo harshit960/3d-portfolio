@@ -1,10 +1,10 @@
 ---
-title: Anton
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+title: Freelynce
+date: '2025-01'
+description: Freelynce is an AI-powered freelancing platform built with React, TypeScript, Node.js, Express, and PostgreSQL, offering features like AI-enhanced project posting, a learning hub, and AI-integrated chat, with a focus on empowering freelancers and connecting them with businesses.
 author: Harshit Raj
 tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+image: https://images.unsplash.com/photo-1551275073-f8adef647c1d
 ---
 
 # Freelynce (YoungLancer)

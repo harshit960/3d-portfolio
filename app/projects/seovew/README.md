@@ -1,14 +1,15 @@
 ---
 title: SeoVew
-date: '2023-05-15'
-description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
+date: '2024-05'
+description: SEO-Audit is a comprehensive web application built with Next.js, TypeScript, TailwindCSS, and Node.js, offering in-depth website SEO analysis, performance metrics, and actionable recommendations by integrating tools like Google PageSpeed Insights and Lighthouse.
+
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [SEO, Next.js, TypeScript, Lighthouse, Google PageSpeed Insights, On-Page SEO, Web Performance]
+image: https://images.unsplash.com/photo-1560472354-b33ff0c44a43
 ---
 
 
-# SEO-Audit
+# SeoVew
 
 Hey there! Welcome to SEO-Audit, a comprehensive web application I built to provide in-depth website SEO analysis and performance metrics. I created this tool to help identify and fix common SEO issues, improve website performance, and enhance search engine visibility for any website.
 

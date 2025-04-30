@@ -1,7 +1,7 @@
 ---
 title: EDI Dashobard
 date: '2024-02'
-description: EDI Dashobard is a comprehensive EDI (Electronic Data Interchange) partner and project management application.
+description: EDI Dashboard is a comprehensive web application built with React and Express.js, designed for managing EDI partners and projects, featuring onboarding, tracking, and various EDI message support with role-based access control.
 author: Harshit Raj
 tags: ['React.js', 'SQL Server', 'Azure']
 image: https://images.unsplash.com/photo-1531403009284-440f080d1e12

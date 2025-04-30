@@ -1,10 +1,10 @@
 ---
-title: Anton
-date: '2023-05-15'
+title: The Tea Project
+date: '2023-04'
 description: Learn how to set up a new project with Next.js and TypeScript for building modern web applications.
 author: Harshit Raj
-tags: ['Next.js', 'TypeScript', 'Web Development', 'React']
-image: https://images.unsplash.com/photo-1743993330456-6fa7a903b3bd
+tags: [Tea Tourism, Tourism Platform, React, Travel, Accommodation, Marketplace, Maps, Sustainable Tourism]
+image: https://images.unsplash.com/photo-1491497895121-1334fc14d8c9
 ---
 
 # 🍵 Tea Tourism Platform
