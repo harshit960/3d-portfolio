@@ -1,6 +1,6 @@
 ---
 title: Nightcrawler
-date: '2024-03'
+date: '2025-03'
 description: Nightcrawler is an asynchronous Python web crawler that uses Selenium and MongoDB to intelligently extract email addresses from websites within the same domain while bypassing anti-bot measures.
 author: Harshit Raj
 tags: [Web Crawler, Email Extraction, Python, Selenium, Scraping, Automation, Data Mining]

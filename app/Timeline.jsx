@@ -128,11 +128,32 @@ function Timeline() {
             href: "https://github.com/yourusername/scraping-2"
         },
         {
-            name: "PX Productiont",
+            name: "Freelynce",
             date: "01/2025",
             type: "Freelance Project",
-            description: "Hobby Project",
-            href: "https://github.com/yourusername/px-production"
+            description: "Freelynce is an AI-powered freelancing platform built with React, TypeScript, Node.js, Express, and PostgreSQL, offering features like AI-enhanced project posting, a learning hub, and AI-integrated chat, with a focus on empowering freelancers and connecting them with businesses.",
+            href: "/projects/freelynce"
+        },
+        {
+            name: "Nightcrawler",
+            date: "03/2025",
+            type: "Personal Project",
+            description: "Nightcrawler is an asynchronous Python web crawler that uses Selenium and MongoDB to intelligently extract email addresses from websites within the same domain while bypassing anti-bot measures.",
+            href: "/projects/nightcrawler"
+        },
+        {
+            name: "BeatsNotFound",
+            date: "04/2025",
+            type: "Personal Project",
+            description: "beatsnotfound is a terminal-style music application that uses AI to create personalized Spotify playlists based on your mood.",
+            href: "/projects/beats404"
+        },
+        {
+            name: "Anton",
+            date: "04/2025",
+            type: "Personal Project",
+            description: "Anton is an advanced conversational AI platform with a microservice architecture, leveraging RAG, vector databases, and fine-tuned LLMs to provide context-aware conversations via Telegram with an evolving personality and Hinglish support.",
+            href: "/projects/anton"
         },
     ];
 
