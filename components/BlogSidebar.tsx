@@ -44,7 +44,7 @@ export default function BlogSidebar({ posts, currentSlug }: BlogSidebarProps) {
         ) : (
           otherPosts.map((post, index) => (
             <Link 
-              href={`/blog/${post.slug}`} 
+              href={`/projects/${post.slug}`} 
               key={post.slug}
               className="group block"
             >

@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   } catch (error) {
     return {
-      title: 'Blog Post | Portfolio',
-      description: 'Read my latest blog posts about web development and technology.',
+      title: 'Projects | Portfolio',
+      description: 'Read my latest projects and blog posts about web development and technology.',
     };
   }
 }
@@ -135,7 +135,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                   </div>
                 </div>
                 <Link 
-                  href="/blog" 
+                  href="/projects" 
                   className="inline-flex items-center px-4 py-2 bg-[#21262d] hover:bg-primary transition-colors text-[#c9d1d9] hover:text-white rounded-lg"
                 >
                   <span>More articles</span>

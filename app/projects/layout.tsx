@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Blog | Portfolio',
+  title: 'Projects | Portfolio',
   description: 'Read articles on web development, coding tips, and more!',
 };
 

@@ -13,7 +13,7 @@ export default function NotFound() {
         <p className="text-[#8b949e] mb-4">Try checking the URL or navigating back to the blog index.</p>
       </div>
       <Link 
-        href="/blog" 
+        href="/projects" 
         className="px-6 py-3 bg-[#1f6feb] text-white rounded-full font-medium text-lg hover:bg-[#388bfd] transition-colors"
       >
         Back to Blog
