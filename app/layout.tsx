@@ -4,8 +4,8 @@ import './globals.css'
 import Navbar from '../components/Navbar'
 
 export const metadata = {
-  title: "Home - Portfolio",
-  description: 'Portfolio',
+  title: "Home - Harshit's Portfolio",
+  description: 'Full Stack Developer | React | Next.js | TypeScript ',
 }
 
 

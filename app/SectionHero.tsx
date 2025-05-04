@@ -102,6 +102,27 @@ export default function SectionHero(): JSX.Element {
                     >
                         I&apos;m Harshit Raj. A developer studying at NIT Jamshedpur.
                     </motion.p>
+                    <motion.div 
+                        className="mt-8 xl:mt-6 z-10"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={inView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ delay: 0.6 }}
+                    >
+                        <a 
+                            href="https://drive.google.com/file/d/1BtnTux2T4OSGqGDTXhQ63zMQQ9gLUhqZ/view?usp=drivesdk" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex hover:bg-black  items-center gap-2 px-6 py-3 font-medium text-white transition-all duration-300 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 focus:ring-2 focus:ring-purple-400 focus:outline-none shadow-lg hover:shadow-xl"
+                            aria-label="View my resume"
+                        >
+                            <span>View Resume</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </a>
+                    </motion.div>
+                    
+                    {/* </motion.p> */}
                 </div>
                 {/* second */}
                 <div className='xl:order-2 '>
