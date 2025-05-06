@@ -153,7 +153,7 @@ function Timeline() {
             type: "Freelance Project",
             description: "Freelynce is an AI-powered freelancing platform built with React, TypeScript, Node.js, Express, and PostgreSQL, offering features like AI-enhanced project posting, a learning hub, and AI-integrated chat, with a focus on empowering freelancers and connecting them with businesses.",
             href: "/projects/freelynce",
-            livePreview: "https://freelynce.com"
+            livePreview: "https://younglancer.netlify.app/"
         },
         {
             name: "Nightcrawler",
@@ -161,7 +161,7 @@ function Timeline() {
             type: "Personal Project",
             description: "Nightcrawler is an asynchronous Python web crawler that uses Selenium and MongoDB to intelligently extract email addresses from websites within the same domain while bypassing anti-bot measures.",
             href: "/projects/nightcrawler",
-            livePreview: "https://nightcrawler-demo.vercel.app"
+            livePreview: "#"
         },
         {
             name: "BeatsNotFound",
@@ -169,7 +169,7 @@ function Timeline() {
             type: "Personal Project",
             description: "beatsnotfound is a terminal-style music application that uses AI to create personalized Spotify playlists based on your mood.",
             href: "/projects/beats404",
-            livePreview: "https://beatsnotfound.vercel.app"
+            livePreview: "https://404beats.vercel.app/"
         },
         {
             name: "Anton",
@@ -177,7 +177,7 @@ function Timeline() {
             type: "Personal Project",
             description: "Anton is an advanced conversational AI platform with a microservice architecture, leveraging RAG, vector databases, and fine-tuned LLMs to provide context-aware conversations via Telegram with an evolving personality and Hinglish support.",
             href: "/projects/anton",
-            livePreview: "https://anton-ai.vercel.app"
+            livePreview: "https://anton-710809779131.us-central1.run.app/"
         },
     ];
 

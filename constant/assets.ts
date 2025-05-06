@@ -46,6 +46,9 @@ export const assets = {
         Younglancer: require("@images/home/myLatestProject/projects/younglancer.png"),
         seo: require("@images/home/myLatestProject/projects/seo.png"),
         yourads: require("@images/home/myLatestProject/projects/yourads.png"),
+        tea: require("@images/home/myLatestProject/projects/tea.png"),
+        anton: require("@images/home/myLatestProject/projects/anton.png"),
+        bnf: require("@images/home/myLatestProject/projects/bnf.png"),
       },
     },
     quote: {

@@ -74,21 +74,21 @@ const technologyStack = [
         image: assets.home.technologyStack.mongo,
         officialSite: '#',
     },
-    {
-        name: "MySQL",
-        image: assets.home.technologyStack.mysql,
-        officialSite: '#',
-    },
+    // {
+    //     name: "MySQL",
+    //     image: assets.home.technologyStack.mysql,
+    //     officialSite: '#',
+    // },
     {
         name: "PostgreSQL",
         image: assets.home.technologyStack.psql,
         officialSite: '#',
     },
-    {
-        name: "SQL Server",
-        image: assets.home.technologyStack.mssql,
-        officialSite: '#',
-    },
+    // {
+    //     name: "SQL Server",
+    //     image: assets.home.technologyStack.mssql,
+    //     officialSite: '#',
+    // },
     
     // Cloud & DevOps
     {

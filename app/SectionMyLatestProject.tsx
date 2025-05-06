@@ -19,6 +19,34 @@ const tabs = [
         image: assets.home.myLatestProject.vs,
         data: [
             {
+                slug: 'Anton',
+                title: 'Anton Agent',
+                image: assets.home.myLatestProject.projects.anton,
+                repositoryUrl: "/projects/anton",
+                demoUrl: "https://anton-710809779131.us-central1.run.app/",
+            },
+            {
+                slug: 'BeatsNotFound',
+                title: 'BeatsNotFound',
+                image: assets.home.myLatestProject.projects.bnf,
+                repositoryUrl: "/projects/beats404",
+                demoUrl: "https://404beats.vercel.app/",
+            },
+            {
+                slug: 'The Tea Project',
+                title: 'The Tea Project',
+                image: assets.home.myLatestProject.projects.tea,
+                repositoryUrl: "/projects/theteaproject",
+                demoUrl: "https://theteaproj.netlify.app/",
+            },
+            // {
+            //     slug: 'Nightcrawler',
+            //     title: 'Nightcrawler',
+            //     image: assets.home.myLatestProject.projects.Younglancer,
+            //     repositoryUrl: "/projects/nightcrawler",
+            //     demoUrl: "/projects/nightcrawler",
+            // },
+            {
                 slug: 'Younglancer',
                 title: 'Younglancer Website',
                 image: assets.home.myLatestProject.projects.Younglancer,

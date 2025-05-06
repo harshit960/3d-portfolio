@@ -6,6 +6,7 @@ import SectionMyLatestProject from "./SectionMyLatestProject";
 import SectionQuote from "./SectionQuote";
 import Timeline from "./Timeline";
 import SectionTechnologyStack from "./SectionTechnologyStack";
+import SectionTestimonials from "./SectionTestimonials";
 // import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
@@ -165,6 +166,7 @@ export default function Home() {
       <SectionHero />
       <SectionMyLatestProject />
       <SectionTechnologyStack />
+      <SectionTestimonials />
       <Timeline/>
       <SectionLetsConnect />
       <SectionQuote />
