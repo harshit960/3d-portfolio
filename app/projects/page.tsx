@@ -81,7 +81,7 @@ export default async function Blog() {
                                         {new Date(featuredPost.metadata.date).toLocaleDateString('en-US', {
                                             year: 'numeric',
                                             month: 'long',
-                                            day: 'numeric',
+                                            // day: 'numeric',
                                         })}
                                     </span>
                                     

@@ -13,6 +13,9 @@ image: https://images.unsplash.com/photo-1696272440000-0808a203c852
 
 ## Overview
 
+**Live Demo**: [Anton as Aanya on Telegram](https://anton-710809779131.us-central1.run.app/)
+
+
 Anton is a sophisticated conversational AI assistant. It leverages modern AI techniques to provide natural, context-aware conversations through a Telegram interface. The system combines retrieval-augmented generation (RAG), vector databases, and fine-tuned large language models to create human-like conversational experiences with a unique, evolving personality.
 
 ## Architecture

@@ -14,7 +14,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   const formattedDate = new Date(metadata.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    // day: 'numeric',
   });
 
   return (

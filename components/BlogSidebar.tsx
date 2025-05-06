@@ -74,7 +74,7 @@ export default function BlogSidebar({ posts, currentSlug }: BlogSidebarProps) {
                   
                   {/* Floating date */}
                   <div className="absolute bottom-2 right-2 bg-[#0d1117]/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-[#c9d1d9]">
-                    {new Date(post.metadata.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    {new Date(post.metadata.date).toLocaleDateString('en-US', { month: 'long' })}
                   </div>
                 </div>
                 
