@@ -9,15 +9,15 @@ import Link from 'next/link';
 import styles from "./home.module.css";
 
 const technologyStack = [
-    
+    // Frontend Technologies
     {
         name: "Javascript",
         image: assets.home.technologyStack.javascript,
         officialSite: '#',
     },
     {
-        name: "Python",
-        image: assets.home.technologyStack.python,
+        name: "TypeScript",
+        image: assets.home.technologyStack.typescript,
         officialSite: '#',
     },
     {
@@ -26,28 +26,13 @@ const technologyStack = [
         officialSite: '#',
     },
     {
+        name: "Next.js",
+        image: assets.home.technologyStack.nextJs,
+        officialSite: '#',
+    },
+    {
         name: "Tailwind CSS",
         image: assets.home.technologyStack.tailwindCss,
-        officialSite: '#',
-    },
-    {
-        name: "Electron JS",
-        image: assets.home.technologyStack.electron,
-        officialSite: '#',
-    },
-    {
-        name: "Flask",
-        image: assets.home.technologyStack.flask,
-        officialSite: '#',
-    },
-    {
-        name: "Node JS",
-        image: assets.home.technologyStack.node,
-        officialSite: '#',
-    },
-    {
-        name: "Selenium",
-        image: assets.home.technologyStack.selenium,
         officialSite: '#',
     },
     {
@@ -60,19 +45,65 @@ const technologyStack = [
         image: assets.home.technologyStack.gsap,
         officialSite: '#',
     },
+    
+    // Backend Technologies
     {
-        name: "Next.js",
-        image: assets.home.technologyStack.nextJs,
+        name: "Python",
+        image: assets.home.technologyStack.python,
         officialSite: '#',
     },
     {
-        name: "TypeScript",
-        image: assets.home.technologyStack.typescript,
+        name: "Node JS",
+        image: assets.home.technologyStack.node,
         officialSite: '#',
     },
+    {
+        name: "Flask",
+        image: assets.home.technologyStack.flask,
+        officialSite: '#',
+    },
+    {
+        name: "Prisma",
+        image: assets.home.technologyStack.prisma,
+        officialSite: '#',
+    },
+    
+    // Databases
+    {
+        name: "MongoDB",
+        image: assets.home.technologyStack.mongo,
+        officialSite: '#',
+    },
+    {
+        name: "MySQL",
+        image: assets.home.technologyStack.mysql,
+        officialSite: '#',
+    },
+    {
+        name: "PostgreSQL",
+        image: assets.home.technologyStack.psql,
+        officialSite: '#',
+    },
+    {
+        name: "SQL Server",
+        image: assets.home.technologyStack.mssql,
+        officialSite: '#',
+    },
+    
+    // Cloud & DevOps
     {
         name: "Docker",
         image: assets.home.technologyStack.docker,
+        officialSite: '#',
+    },
+    {
+        name: "Azure",
+        image: assets.home.technologyStack.azure,
+        officialSite: '#',
+    },
+    {
+        name: "AWS",
+        image: assets.home.technologyStack.aws,
         officialSite: '#',
     },
     {
@@ -81,11 +112,27 @@ const technologyStack = [
         officialSite: '#',
     },
     {
-        name: "AWS",
-        image: assets.home.technologyStack.aws,
+        name: "GitHub Actions",
+        image: assets.home.technologyStack.actions,
         officialSite: '#',
     },
     
+    // Tools & Utilities
+    {
+        name: "Electron JS",
+        image: assets.home.technologyStack.electron,
+        officialSite: '#',
+    },
+    {
+        name: "Selenium",
+        image: assets.home.technologyStack.selenium,
+        officialSite: '#',
+    },
+    {
+        name: "LlamaIndex",
+        image: assets.home.technologyStack.llama,
+        officialSite: '#',
+    },
 ]
 
 export default function SectionTechnologyStack() {

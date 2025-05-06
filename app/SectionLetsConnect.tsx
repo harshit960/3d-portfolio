@@ -40,7 +40,7 @@ export default function SectionLetsConnect() {
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://www.instagram.com/harshit.tle/', '_blank'),
+            onClick: () => window.open('https://www.instagram.com/horrid_harshitt/', '_blank'),
         },
         {
             initial: { y: -50, opacity: 0 },
@@ -66,7 +66,7 @@ export default function SectionLetsConnect() {
             width: 168,
             height: 168,
             tabIndex: 0,
-            onClick: () => window.open('https://twitter.com/', '_blank')
+            onClick: () => window.open('https://twitter.com/horrid_harshh', '_blank')
         },
         {
             initial: { y: 100, opacity: 0 },
