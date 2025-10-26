@@ -22,7 +22,8 @@ An immersive, animated Red Bull promotional website featuring 3D models, smooth 
 
 ## 🔴 Live Demo
 
-[View Live Site](https://your-demo-link-here.com) *(Replace with your actual deployment link)*
+[View Live Site](https://project-redbull.vercel.app/) 
+[GitHub Repo](https://github.com/harshit960/Project-Redbull_Harshit) 
 
 ## ✨ Features
 
